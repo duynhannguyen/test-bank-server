@@ -25,7 +25,7 @@ const expressServer = app.listen(PORT, () => {
 });
 
 const io = new Server(expressServer, {
-  cors: ['https://x19fp-client.onrender.com', 'http://localhost:5173']
+  cors: ['https://test-bank-client.onrender.com', 'http://localhost:5173']
 });
 
 io.on('connection', socket => {
